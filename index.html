@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            Tic Tac Toe
+        </div>
+    </div>
+
+    <div id="player1" class="display">
+        <div class="info">
+            <div class="marker">X</div>
+            <div class="name">Player 1</div>
+            <div class="score-box">0</div>
+            <div class="result-box"></div>
+        </div>
+    </div>
+    
+    <div id="player2" class="display">
+        <div class="info">
+            <div class="marker">O</div>
+            <div class="name">Player 2</div>
+            <div class="score-box">0</div>
+            <div class="result-box"></div>
+        </div>
+    </div>
+
+    <div class="gameboard display">
+        <table id="gameboard-box">
+            <tr>
+                <td class="box" id="box1"></td>
+                <td class="box" id="box2"></td>
+                <td class="box" id="box3"></td>
+            </tr>
+            <tr>
+                <td class="box" id="box4"></td>
+                <td class="box" id="box5"></td>
+                <td class="box" id="box6"></td>
+            </tr>
+            <tr>
+                <td class="box" id="box7"></td>
+                <td class="box" id="box8"></td>
+                <td class="box" id="box9"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="buttons display">
+        <button type="button" id="replay-btn">Replay</button>
+        <button type="button" id="reset-btn">Reset</button>
+    </div>
+
+    <div class="form">
+        <form action="post" id="input">
+            <div class="query">
+                <label for="player1-name">Player 1 - </label>
+                <input type="text" id="player1-name" name="player1-name" required>
+            </div>
+
+            <div class="query">
+                <label for="player2-name">Player 2 - </label>
+                <input type="text" id="player2-name" name="player2-name" required>
+            </div>
+
+            <div>
+                <button type="submit" id="start-btn">Start</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
